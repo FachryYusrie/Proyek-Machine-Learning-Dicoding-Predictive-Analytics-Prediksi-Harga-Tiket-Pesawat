@@ -193,9 +193,7 @@ Kerugian  _XGBoost (Extreme Gradient Boosting)_ :
 Dalam tahap evaluasi, metrik yang digunakan adalah `R2 Score`
 R² Score adalah sebuah metrik yang digunakan untuk mengevaluasi seberapa baik model regresi dapat menjelaskan variasi dari data target (nilai aktual). Nilai R² menunjukkan persentase variasi data yang berhasil dijelaskan oleh model. Rumus:
 
-
-$$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}$$
-
+![formula](image/r2_score_formula.png)
 
 Keterangan:
 - $$y_i$$: Nilai aktual
@@ -224,7 +222,9 @@ Dilihat dari _Tabel 3. Hasil R2 Score_, dapat diketahui bahwa model dengan algor
 
 ## Referensi
 [1]. [https://kumparan.com/jendela-dunia/kenapa-harga-tiket-pesawat-naik-turun-cari-tahu-jawabannya-di-sini-212Dwje2OR3](https://kumparan.com/jendela-dunia/kenapa-harga-tiket-pesawat-naik-turun-cari-tahu-jawabannya-di-sini-212Dwje2OR3).
+
 [2]. [https://www.nucleusbox.com/assumptions-of-linear-regression/](https://www.nucleusbox.com/assumptions-of-linear-regression/)
+
 [3]. [https://deepai.org/machine-learning-glossary-and-terms/random-forest](https://deepai.org/machine-learning-glossary-and-terms/random-forest).
+
 [4]. [https://xgboost.readthedocs.io/en/stable/](https://xgboost.readthedocs.io/en/stable/)
-_
