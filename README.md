@@ -83,7 +83,7 @@ Dari 11 fitur tersebut, yang akan dipakai hanya fitur 'departure_time', 'stops',
 
 ### EDA - Univariate Analysis
 
-![univariate analysis](image/Analisis Univariate Fitur Kategorik.png)
+![univariate analysis](image/Analisis_Univariate_Fitur_Kategorik.png)
 
 Gambar 1a. Analisis Univariat (Data Kategori) 
 
