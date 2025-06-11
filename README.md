@@ -202,7 +202,7 @@ Keterangan:
 - $$n$$: Jumlah data.
 
 
-Berikut hasil \[R^2\] dari 3 buah model yang latih:
+Berikut hasil $$R^2$$ dari 3 buah model yang latih:
 
 | Model | r2-score |
 | ------ | ------ |
