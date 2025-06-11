@@ -210,9 +210,14 @@ Berikut hasil $$R^2$$ dari 3 buah model yang latih:
 | RandomForest  | 0.971407 |
 | XGBoost | 0.953829 |
 
-Tabel 3. Hasil R2 Score
+Tabel 3. Hasil R$$^2$$ Score
 
-Dilihat dari _Tabel 3. Hasil R2 Score_, dapat diketahui bahwa model dengan algoritma _Random Forest_ memiliki R2 Score yang lebih tinggi sebesar `97.14%` . Untuk itu model tersebut yang akan dipilih untuk digunakan. Diharapkan dengan model yang telah dikembangan dapat memprediksi harga tiket pesawat dengan baik menggunakan _Random Forest_.
+Dilihat dari _Tabel 3. Hasil $$R^2$$ Score_, dapat diketahui bahwa model dengan algoritma _Random Forest_ memiliki $$R^2$$ Score yang lebih tinggi sebesar `97.14%` . Untuk itu model tersebut yang akan dipilih untuk digunakan. Diharapkan dengan model yang telah dikembangan dapat memprediksi harga tiket pesawat dengan baik menggunakan _Random Forest_. Dari hasil prediksi menggunakan Random Forest yang sudah di hyperparameter tunning, didapatkan visualisasi prediction vs actual harga tiket sebagai berikut.
+
+![testing](image/Prediction_vs_Actual.png)
+
+
+Gambar 3. Prediction vs Actual Harga Tiket Pesawat
 
 
 
