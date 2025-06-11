@@ -87,26 +87,26 @@ Dari 11 fitur tersebut, yang akan dipakai hanya fitur 'departure_time', 'stops',
 
 Gambar 1a. Analisis Univariat (Data Kategori) 
 
-![Univariate Analysis]()
+![Univariate Analysis](image/Analisis_Univariate_Fitur_Numerik.png)
 
 Gambar 1b. Analisis Univariat (Data Numerik) 
 
 Berdasarkan _Gambar 1a_, Pagi dan Dini Hari adalah waktu keberangkatan puncak, menunjukkan preferensi di antara penumpang untuk memulai perjalanan mereka di pagi hari. Sebaliknya, Malam dan Sore hari adalah waktu kedatangan yang paling umum, menunjukkan bahwa penumpang lebih menyukai perjalanan di malam hari untuk mencapai tujuan mereka. Selain itu, Kelas ekonomi merupakan pilihan yang paling disukai oleh para pelancong, secara signifikan melampaui popularitas kelas bisnis dan mayoritas penumpang melakukan penerbangan hanya sekali tanpa perlu transit. Pada _Gambar 1b_, untuk data numerik memiliki karakteristik, yaitu distribusi kolom durasi menunjukkan kecenderungan yang signifikan. Visualisasi menunjukkan bahwa penerbangan dengan durasi antara 0-5 jam memiliki frekuensi tertinggi, menunjukkan bahwa rentang ini adalah yang paling umum dalam dataset.
 Distribusi variabel harga juga menunjukkan tanda-tanda skewness.
 
-### EDA - Multivariate Analysis
+### EDA - Bivariate Analysis
 
-![Multivariate Analysis]()
+![Bivariate Analysis](image/Analisis_Bivariate_Fitur_Kategorikal.png)
 
 
 Gambar 2a. Analisis Biivariat (Kategorikal)
 
-![Multivariate Analysis]()
+![Bivariate Analysis](image/Analisis_Bivariate_Fitur_Numerik.png)
 
 
 Gambar 2b. Analisis Bivariate (Numerikal)
 
-![Multivariate Analysis]()
+![Multivariate Analysis](image/Correlation_Metrix.png)
 
 
 Gambar 2c. Analisis Matriks Korelasi
@@ -193,15 +193,15 @@ Kerugian  _XGBoost (Extreme Gradient Boosting)_ :
 Dalam tahap evaluasi, metrik yang digunakan adalah `R2 Score`
 R² Score adalah sebuah metrik yang digunakan untuk mengevaluasi seberapa baik model regresi dapat menjelaskan variasi dari data target (nilai aktual). Nilai R² menunjukkan persentase variasi data yang berhasil dijelaskan oleh model. Rumus:
 
-\[
-R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}
-\]
+
+$$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}$$
+
 
 Keterangan:
-- \( y_i \): Nilai aktual
-- \( \hat{y}_i \): Nilai prediksi
-- \( \bar{y} \): Rata-rata dari nilai aktual
-- \( n \): Jumlah data.
+- $$y_i$$: Nilai aktual
+- $$\hat{y}_i$$: Nilai prediksi
+- $$\bar{y}$$: Rata-rata dari nilai aktual
+- $$n$$: Jumlah data.
 
 
 Berikut hasil \[R^2\] dari 3 buah model yang latih:
