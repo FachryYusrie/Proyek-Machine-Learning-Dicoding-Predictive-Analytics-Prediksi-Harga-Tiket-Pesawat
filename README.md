@@ -1,36 +1,36 @@
-# Laporan Proyek Machine Learning - Ahmad Wandi
+# Laporan Proyek Machine Learning - Muhammad Lailfachry Yusrie
 ## Domain Proyek
-Domain yang dipilih untuk proyek *machine learning* ini adalah **Pertanian**, dengan judul **Predictive Analytics: Kualitas Apel**  
+Domain yang dipilih untuk proyek *machine learning* ini adalah **Ekonomi dan Bisnis**, dengan judul **Predictive Analytics: Harga Tiket Pesawat**  
 
 ### Latar Belakang
 
-![foto apel](https://i.ibb.co/GWr1G0Q/dataset-cover-1.jpg)
+[foto apel](https://github.com/user-attachments/assets/efe976ad-72f8-4597-948d-a5676ea10c94)
 
-Indonesia merupakan salah satu negara penghasil apel terbesar di Asia Tenggara, dengan produksi mencapai 1,2 juta ton per tahun. Apel menjadi komoditas penting bagi petani dan berkontribusi pada ekonomi nasional.[[1](https://dataindonesia.id/agribisnis-kehutanan/detail/produksi-apel-indonesia-sebanyak-509544-ton-pada-2021)]  Salah satu tantangan utama dalam industri apel adalah menjaga kualitas produk. Kualitas apel dapat menurun akibat berbagai faktor, seperti ukuran yang kecil, tingkat kematangan, dan kerenyahan buah. Penurunan kualitas apel dapat menyebabkan kerugian ekonomi bagi petani dan distributor. [[2](https://hostjournals.com/bulletincsr/article/view/251)] 
-Penerapan _predictive analytics_ dalam industri apel dapat memberikan manfaat bagi petani, distributor, dan konsumen. Petani dapat meningkatkan keuntungan dengan meningkatkan kualitas dan hasil panen apel. Distributor dapat mengurangi kerugian dan meningkatkan efisiensi rantai pasokan. Konsumen mendapatkan apel dengan kualitas yang lebih baik dan harga yang lebih stabi[[3](https://doi.org/10.47065/bulletincsr.v3i3.251)]
+Industri penerbangan global telah mengalami pertumbuhan yang signifikan, menjadikan perjalanan udara sebagai moda transportasi yang semakin mudah diakses dan penting bagi individu maupun bisnis. Di tengah dinamika pasar yang kompleks, harga tiket pesawat seringkali berfluktuasi secara drastis, dipengaruhi oleh berbagai faktor seperti waktu keberangkatan, rute, maskapai penerbangan, kelas penerbangan, musim, hingga dinamika penawaran dan permintaan. Volatilitas harga ini menjadi tantangan tersendiri bagi konsumen yang ingin merencanakan perjalanan dengan efisien dan hemat biaya. Tanpa informasi yang akurat mengenai estimasi harga yang wajar, penumpang berisiko membayar lebih mahal dari yang seharusnya atau kesulitan dalam mengalokasikan anggaran perjalanan secara optimal [[1](https://kumparan.com/jendela-dunia/kenapa-harga-tiket-pesawat-naik-turun-cari-tahu-jawabannya-di-sini-212Dwje2OR3)].
+Pengembangkan model prediktif harga tiket pesawat ini diharapkan dapat memberikan estimasi harga yang akurat dan relevan bagi travel agent. Dengan memanfaatkan teknik machine learning berbasis regresi pada kumpulan data pemesanan tiket pesawat, model ini diharapkan mampu mengidentifikasi pola dan hubungan antara berbagai fitur perjalanan (maskapai, waktu keberangkatan, jumlah transit, durasi penerbangan, kota asal/tujuan, kelas, dan sisa hari sebelum keberangkatan) dengan harga tiket. Informasi prediksi harga ini akan memberdayakan konsumen untuk mengambil keputusan yang lebih cerdas. Penumpang dapat membandingkan harga yang ditawarkan oleh maskapai atau agen perjalanan dengan harga prediksi model, sehingga memungkinkan mereka untuk mengidentifikasi apakah harga yang ditawarkan lebih mahal atau lebih murah dari ekspektasi.
 
 ## Business Understanding
-Pengembangan model prediksi kualitas apel memiliki potensi untuk memberikan manfaat bagi berbagai pihak, termasuk petani, distributor. Model ini dapat membantu meningkatkan kualitas panen apel, meningkatkan nilai jual apel, dan meningkatkan kepercayaan konsumen. Contoh potensi manfaat hasil prediksi kualitas apel yang akurat dapat membantu petani dalam melakukan pemilahan dan dapat menentukan harga jual buah kedepan untuk kedepannya.
+Pengembangan model prediksi harga tiket pesawat memiliki potensi untuk memberikan manfaat bagi berbagai pihak, termasuk calon penumpang, travel agent, dan maskapai penerbangan. Model ini dapat membantu mengestimasi harga tiket dari data yang ada, menjual tiket pesawat dengan harga yang optimal, dan meningkatkan kepercayaan penumpang. Contoh potensi manfaat hasil prediksi harga tiket pesawat yang akurat dapat membantu travel agent dan penumpang dalam menetapkan harga tiket yang tepat dan penumpang dapat merencanakan keuangan untuk perjalanannya dengan lebih tepat sasaran.
+
 ### Problem Statements
 Berdasarkan latar belakang di atas, berikut ini merupakan rincian masalah yang dapat diselesaikan pada proyek ini:
--  Bagaimana membuat model machine learning yang dapat memprediksi kualitas apel berdasarkan data visual dan sensorik?
+-  Bagaimana membuat model machine learning yang dapat memprediksi harga tiket pesawat berdasarkan data harga tiket sebelumnya dan faktor yang mempengaruhi?
 -  Model yang seperti apa yang memiliki akurasi paling baik?
--  Bagaimana model ini dapat membantu petani dan distributor dalam meningkatkan kualitas dan nilai jual apel?
+-  Bagaimana model ini dapat membantu travel agent dan penumpang dalam mengestimasi harga tiket pesawat dengan tepat?
+  
 ### Goals
 Tujuan dari proyek ini adalah:
-- Membuat model machine learning yang dapat memprediksi kualitas apel berdasarkan data visual dan sensorik.
-- Membandingkan beberapa algoritma model untuk menemukan akurasi terbaik dalam memprediksi kualitas apel.
--  Mengembangkan aplikasi yang mudah digunakan untuk membantu petani dan distributor dalam menggunakan model machine learning untuk memprediksi kualitas apel.
+- Membuat model machine learning yang dapat memprediksi harga tiket pesawat berdasarkan data harga tiket sebelumnya.
+- Membandingkan beberapa algoritma model untuk menemukan akurasi terbaik dalam memprediksi harga tiket.
+- Mengembangkan aplikasi yang mudah digunakan untuk membantu penumpang mengestimasi harga tiket pesawat dan mengimplmentasikan model prediktif kedalam sistem yang digunakan travel agent.
 
 ### Solution Statements
 -  Menganalisis data dengan melakukan univariate analysis dan multivariate analysis. Memahami data juga dapat dilakukan dengan visualisasi. Memahami data dapat membantu untuk mengetahui kolerasi matrix antar fitur dan mendeteksi outlier.
 - Melakukan proses data cleaning dan normalisai data agar mendapat prediksi yang baik.
-- Membuat beberapa variasi model untuk mendapatkan model yang paling baik dari beberapa model yang telah dibuat untuk prediksi kualitas apel. Diantaranya adalah menggunakan:
-    * K-Nearest Neighbor (KNN) adalah algoritma sederhana yang mengklasifikasikan data atau kasus baru berdasarkan ukuran kesamaan. Hal ini sebagian besar digunakan untuk mengklasifikasikan titik data berdasarkan tetangga terdekatnya sebagai acuan.[[4](https://towardsdatascience.com/a-simple-introduction-to-k-nearest-neighbors-algorithm-b3519ed98e)]
-    * Random Forest adalah algoritma machine learning yang kuat yang dapat digunakan untuk berbagai tugas termasuk regresi dan klasifikasi. Ini adalah metode ensemble, yang berarti bahwa model random forest terdiri dari banyak decision tree kecil, yang disebut estimator, yang masing-masing menghasilkan prediksi mereka sendiri. Random forest menggabungkan prediksi estimator untuk menghasilkan prediksi yang lebih akurat .[[5](https://deepai.org/machine-learning-glossary-and-terms/random-forest)]
-    * Support Vector Machine (SVM) adalah algoritma yang digunakan untuk menemukan hyperplane dalam ruang N-dimensi (N - jumlah fitur) yang secara jelas mengklasifikasikan titik data. SVM dapat digunakan untuk menyelesaikan permasalahan klasifikasi, regresi, dan pendeteksian outlier.[[6](https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47)]
-    * Naive Bayes adalah model machine learning probabilistik yang digunakan untuk tugas klasifikasi. Inti dari classifier ini didasarkan pada teorema Bayes.[[7](https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c)]
-    * Extra trees classifier adalah sejumlah besar pohon keputusan yang belum dipangkas dari kumpulan data pelatihan. Prediksi dibuat dengan merata-ratakan prediksi pohon keputusan dalam kasus regresi atau menggunakan suara terbanyak dalam kasus klasifikasi.[[8](https://machinelearningmastery.com/extra-trees-ensemble-with-python/)]
+- Membuat beberapa variasi model untuk mendapatkan model yang paling baik dari beberapa model yang telah dibuat untuk prediksi harga tiket pesawat. Diantaranya adalah menggunakan:
+    * Linear Regression adalah algoritma sederhana yang memodelkan hubungan antara satu atau lebih feature dan target variable dengan cara menemukan best-fit line yang meminimalkan selisih antara nilai yang diprediksi dan nilai aktual.[[2](https://www.nucleusbox.com/assumptions-of-linear-regression/)]
+    * Random Forest adalah algoritma machine learning yang kuat yang dapat digunakan untuk berbagai tugas termasuk regresi dan klasifikasi. Ini adalah metode ensemble, yang berarti bahwa model random forest terdiri dari banyak decision tree kecil, yang disebut estimator, yang masing-masing menghasilkan prediksi mereka sendiri. Random forest menggabungkan prediksi estimator untuk menghasilkan prediksi yang lebih akurat .[[3](https://deepai.org/machine-learning-glossary-and-terms/random-forest)]
+    * XGBoost (Extreme Gradient Boosting) adalah algoritma yang menggunakan pendekatan boosting, di mana model dibangun secara bertahap, dengan setiap model baru dilatih untuk memperbaiki kesalahan prediksi dari model sebelumnya.[[4](https://xgboost.readthedocs.io/en/stable/)]
 
 ## Data Understanding
 ### EDA - Deskripsi Variabel
@@ -39,130 +39,128 @@ Tujuan dari proyek ini adalah:
 
 | Jenis | Keterangan |
 | ------ | ------ |
-| Title | _Apple Quality_ |
-| Source | [Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/apple-quality/data) |
-| Maintainer | [Nidula Elgiriyewithana ⚡](https://www.kaggle.com/nelgiriyewithana) |
+| Title | _flight price prediction_ |
+| Source | [Kaggle](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction?select=Clean_Dataset.csv) |
+| Maintainer | [Shubham Bathwal ⚡](https://www.kaggle.com/shubhambathwal) |
 | License | Other (specified in description) |
 | Visibility | Publik |
-| Tags | _Computer Science, Education, Food, Data Visualization, Classification, Exploratory Data Analysis_ |
-| Usability | 10.00 |
+| Tags | _Computer Science, Business, Economics, Data Visualization, Regression, Exploratory Data Analysis_ |
 
 Berikut informasi pada dataset: 
 Data yang digunakan dalam pembuatan model merupakan data primer, data ini didapat dari sebuah perusahaan pertanian Amerika, yang disediakan secara publik di kaggle dengan nama datasets yaitu: _Apple Quality_
 
-| A_id | Size | Weight | Sweetness | Crunchiness | Juiciness | Ripeness | Acidity | Quality |
-| ------ | ------ |------ | ------ | ------ | ------ |------ | ------ |------ |
-| 0.0 | -3.970049 |-2.512336 | 5.346330 |-1.012009 | 1.844900 |0.329840	| -0.491590483  |good |
-| 1.0 | -1.195217 |-2.839257 | 3.664059 |1.588232 | 0.853286 | 0.867530 | -0.722809367  |good |
-| 2.0 | -0.292024 |	-1.351282 | -1.738429 | -0.342616 | 2.838636 |-0.038033	| 2.621636473  |bad |
-| 3.0 | -0.657196 |-2.271627 | 1.324874 |-0.097875 | 3.637970 |-3.413761	| 0.790723217  |good |
-| 4.0 | 1.364217 |-1.296612 | -0.384658 | -0.553006 | 3.030874 | -1.303849	| 0.501984036  |good |
+| airline | flight | source_city | departure_time | stops | arrival_time | destination_city | class | duration | days_left | price |
+| ------ | ------ |------ | ------ | ------ | ------ |------ | ------ |------ | ------ | ------ |
+| SpiceJet | SG-8709 | Delhi | Evening	| zero | Night | Mumbai | Economy | 2.17 | 1 | 5953 |
+| SpiceJet | SG-8157 | Delhi | Early_Morning | zero | Morning | Mumbai | Economy | 2.33 | 1 | 5953 |
+| AirAsia | I5-764 | Delhi | Early_Morning | zero | Early_Morning | Mumbai | Economy | 2.17 | 1 | 5956 |
+| Vistara | UK-995 | Delhi | Morning | zero | Afternoon | Mumbai | Economy | 2.25 | 1 | 5955 |
+| Vistara | UK-963 | Delhi | Morning | zero | Morning | Mumbai | Economy | 2.33 | 1 | 5955 |
+
 
 
 Tabel 1. EDA Deskripsi Variabel
 
-Dilihat dari _Tabel 1. EDA Deskripsi Variabel_ dataset ini telah di *bersihkan* dan *normalisasi* terlebih dahulu oleh pembuat, sehingga mudah digunakan dan ramah bagi pemula. 
+Dilihat dari _Tabel 1. EDA Deskripsi Variabel_ dataset ini tidak memiliki missing value didalamnya, tetapi terdapat outlier sehingga perlu ditangani. 
 - Dataset berupa CSV (Comma-Seperated Values).
-- Dataset memiliki 4001 sample dengan 9 fitur.
-- Dataset memiliki 7 fitur bertipe float64 dan 2 fitur bertipe object.
+- Dataset memiliki 300152 sample dengan 11 fitur.
+- Dataset memiliki 3 fitur bertipe muneric (1 int64 dan 2 float64) dan 8 fitur bertipe object.
 - Terdapat 1 missing value dalam dataset.
 ### Variable - variable pada dataset
-- `A_id` : Identifikasi unik untuk setiap buah.
-- `Size` : Ukuran buah.
-- `Weight` : Berat buah.
-- `Sweetness` : Tingkat kemanisan buah.
-- `Crunchiness` : Tekstur yang menunjukkan kerenyahan buah.
-- `Juiciness` : Tingkat kesegaran buah.
-- `Ripeness` : Tahap kematangan buah.
-- `Acidity` : Tingkat keasaman buah.
-- `Quality` : Kualitas buah secara keseluruhan, baik atau buruk.
+1) 'airline': Nama perusahaan penerbangan disimpan di kolom maskapai penerbangan. Ini adalah fitur kategoris yang memiliki 6 maskapai penerbangan yang berbeda.
+2) 'flight': Penerbangan menyimpan informasi mengenai kode penerbangan pesawat. Ini adalah fitur kategoris.
+3) 'source_city': Kota tempat penerbangan lepas landas. Ini adalah fitur kategoris yang memiliki 6 kota unik.
+4) 'departure_time': Ini adalah fitur kategoris turunan yang diperoleh dengan mengelompokkan periode waktu ke dalam kelompok. Ini menyimpan informasi tentang waktu keberangkatan dan memiliki 6 label waktu yang unik.
+5) 'stops': Fitur kategoris dengan 3 nilai berbeda yang menyimpan jumlah perhentian antara kota asal dan tujuan.
+6) 'arrival_time': Ini adalah fitur kategoris turunan yang dibuat dengan mengelompokkan interval waktu ke dalam kotak. Fitur ini memiliki enam label waktu yang berbeda dan menyimpan informasi tentang waktu kedatangan.
+7) 'destinationc_city': Kota tempat pesawat akan mendarat. Ini adalah fitur kategoris yang memiliki 6 kota unik.
+8) 'class': Fitur kategoris yang berisi informasi tentang kelas kursi; fitur ini memiliki dua nilai yang berbeda: Bisnis dan Ekonomi.
+9) 'duration': Fitur berkelanjutan yang menampilkan jumlah waktu keseluruhan yang diperlukan untuk bepergian antar kota dalam hitungan jam.
+10) 'days_left': Ini adalah karakteristik turunan yang dihitung dengan mengurangi tanggal perjalanan dengan tanggal pemesanan.
+11) 'price': Variabel target menyimpan informasi tentang harga tiket (dalam kurs India/Rupe).
 
-Dari ke 9 fitur dapat dilihat bahwa fitur `A_id` tidak mempengaruhi kualitas buah hingga akan di hapus.
+Dari 11 fitur tersebut, yang akan dipakai hanya fitur 'departure_time', 'stops', arrival_time', 'class', 'duration', 'days_left', dan 'price' sebagai target. Fitur yang lain tidak dipakai karena datanya spesifik hanya berada di India. Oleh karena itu agar predictive model lebih relevan dan dapat digunakan oleh berbagai negara, maka data selain fitur diatas dihapus.
 
 ### EDA - Univariate Analysis
 
-![Analisis Univariat (Data Kategori)](https://i.ibb.co/0MRrJCC/jumlah-kualitas-datasets.png)
+![Analisis Univariat (Data Kategori)]()
 
 Gambar 1a. Analisis Univariat (Data Kategori) 
 
-![Univariate Analysis](https://i.ibb.co/V2mQ2dK/EDA-Univariate.png)
+![Univariate Analysis]()
 
 Gambar 1b. Analisis Univariat (Data Numerik) 
 
- Berdasarkan _Gambar 1a_ , dapat dilihat bahwa distribusi data katagorik _Quality_ yang terdiri dari _good_ dan _bad_ kualitas apel, yang mana nilai data **bad** terdiri dari `1928` dan **good** terdiri dari `1862`, yang mana menunjukan perbandingan data yang tidak terlalu jauh. Pada _Gambar 1b,_ untuk data numerik memiliki karakteristik, yaitu:
-  - Dilihat dari distribusi data numerik _Size_, ukuran rata-rata buah berkisar dari -2 sampai 2, dan memiliki nilai rata-rata _Mean_ adalah -0.51.
-  - Rata-rata berat apel bernilai -0.99 dan nilai _max_ berat apel adalah 3.08.
-  - Rata-rata tingkat kemanisan apel -0.48.
-  - Tekstur kerenyahan apel berkisar dari 0 hingga 2 yang mana nilai ini menunjukan rata-rata apel itu renyah.
-  - Tingkat kesegaran buah dan Kematangan buat berada pada nilai 0.50 dan 0.53.
-  - Rata-rata tingkat keasaman buah bernilai 0.06.
-
- Nilai-nilai ini menunjukkan bahwa data  telah dinormalisasi dengan cara _z-score normalization_ . _z-score normalization_  mengubah data dengan cara:
- - Mengurangi rata-rata (mean) dari setiap data point.
- - Membagi hasil pengurangan tersebut dengan standar deviasi data.
- 
-
-Pada kasus ini, rata-rata (mean) data "Size" adalah -0.51 dan standar deviasi data "Size" tidak diketahui. Namun, dengan nilai minimum -2 dan maksimum 2, dapat diasumsikan bahwa data "Size" telah diubah skalanya sehingga memiliki mean 0 dan standar deviasi 1. Data numerik lainnya, seperti _"Weight", "Sweetness", "Crunchiness", "Juiciness", "Ripeness", dan "Acidity"_, juga telah dinormalisasi dengan cara yang sama.
-
-
- 
+Berdasarkan _Gambar 1a_, Pagi dan Dini Hari adalah waktu keberangkatan puncak, menunjukkan preferensi di antara penumpang untuk memulai perjalanan mereka di pagi hari. Sebaliknya, Malam dan Sore hari adalah waktu kedatangan yang paling umum, menunjukkan bahwa penumpang lebih menyukai perjalanan di malam hari untuk mencapai tujuan mereka. Selain itu, Kelas ekonomi merupakan pilihan yang paling disukai oleh para pelancong, secara signifikan melampaui popularitas kelas bisnis dan mayoritas penumpang melakukan penerbangan hanya sekali tanpa perlu transit. Pada _Gambar 1b_, untuk data numerik memiliki karakteristik, yaitu distribusi kolom durasi menunjukkan kecenderungan yang signifikan. Visualisasi menunjukkan bahwa penerbangan dengan durasi antara 0-5 jam memiliki frekuensi tertinggi, menunjukkan bahwa rentang ini adalah yang paling umum dalam dataset.
+Distribusi variabel harga juga menunjukkan tanda-tanda skewness.
 
 ### EDA - Multivariate Analysis
 
-![Multivariate Analysis](https://i.ibb.co/yNHmpNZ/EDA-MULTIVARIATE.png)
+![Multivariate Analysis]()
 
 
-Gambar 2a. Analisis Multivariat
+Gambar 2a. Analisis Biivariat (Kategorikal)
 
-![Multivariate Analysis](https://i.ibb.co/WBQ5gPy/Matrix-corelasi.png)
+![Multivariate Analysis]()
 
 
-Gambar 2b. Analisis Matriks Korelasi
+Gambar 2b. Analisis Bivariate (Numerikal)
 
-Pada _Gambar 2a. Analisis Multivariat_, dengan menggunakan fungsi _pairplot_ dari _library seaborn_, tampak terlihat relasi pasangan dalam dataset menunjukan pola acak. Pada pola sebaran data grafik pairplot, terterlihat bahwa _Size_ dan _Sweetness_ memiliki korelasi negatif menurun, yang mana semakin kecil ukuran buah rasa nya akan semakin manis.
-Pada _Gambar 2b. Analisis Matriks Korelasi_, merupakan _Correlation Matrix_ menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur _Juiciness_ memiliki skor korelasi yang cukup besar `0.24` dengan fitur target _Acidity_ .
+![Multivariate Analysis]()
+
+
+Gambar 2c. Analisis Matriks Korelasi
+
+Berdasarkan _Gambar 2a_ , dapat dilihat bahwa dari analisis multivariate untuk fitur kategori terhadap harga tiket didapatkan:
+
+- Price by Class: Harga tiket kelas bisnis secara signifikan lebih tinggi dibandingkan kelas ekonomi. Harga tiket kelas ekonomi lebih terjangkau, sehingga menjadi pilihan yang populer bagi sebagian besar penumpang.
+- Price by Total Stops: Penerbangan dengan jumlah stop >= 2 cenderung lebih mahal dibandingkan penerbangan non-stop. Temuan ini cukup menarik karena biasanya penerbangan nonstop akan cenderung lebih pricey. Hal ini mungkin dapat disebabkan karena mayoritas penerbangan nonstop adalah penerbangan jarak dekat yang memiliki harga tiket lebih rendah.
+- Price by Departure dan Arrival Time: Harga tiket pesawat untuk penerbangan atau kedatangan tengah malam cenderung lebih murah dibandingkan waktu lainnya.
+
+Berdasarkan _Gambar 2b_ , dapat dilihat bahwa Dari analisis multivariate untuk fitur numerikal terhadap harga tiket untuk kelas ekonomi dan bisnis didapatkan:
+- Price by Duration: Kelas Bisnis memiliki kisaran harga yang jauh lebih tinggi dibandingkan dengan Kelas Ekonomi untuk hampir semua durasi penerbangan. Umumnya, harga untuk Kelas Ekonomi di bawah 400 USD, sedangkan Kelas Bisnis bisa mencapai harga di atas 1200 USD. Durasi penerbangan yang lebih lama tidak selalu berkorelasi langsung dengan harga yang lebih tinggi. Meskipun harga cenderung lebih tinggi untuk penerbangan yang lebih lama, terbukti bahwa harga tertinggi sedikit menurun untuk beberapa durasi yang sangat lama, terutama di Kelas Bisnis. Hal ini menunjukkan bahwa faktor selain durasi, seperti permintaan atau rute tertentu, juga dapat memengaruhi dinamika harga untuk penerbangan yang lebih lama.
+- Price by Days Left: Tidak ada korelasi yang kuat antara harga tiket dan jumlah hari yang tersisa sebelum penerbangan, baik untuk Kelas Bisnis maupun Kelas Ekonomi. Oleh karena itu, tidak dapat diasumsikan bahwa membeli tiket lebih awal akan menghasilkan harga yang lebih murah. Namun, ada tren yang menunjukkan bahwa harga tiket cenderung naik sedikit ketika mendekati tanggal keberangkatan, meskipun harga tetap cukup bervariasi secara keseluruhan. Hal ini menunjukkan bahwa meskipun membeli tiket di menit-menit terakhir tidak selalu menghasilkan harga yang lebih tinggi secara signifikan, harga tiket dapat berfluktuasi berdasarkan permintaan dan ketersediaan.
+
+Sehingga dapat dlihat pada _Gambar 2c_, merupakan Correlation Matrix menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur duration memiliki skor korelasi yang cukup besar 0.22 dengan fitur target price. Sedangkan fitur days left berkolerasi negatif terhadap price.
+  
 ## Data Preparation
 Pada proses _Data Preparation_ dilakukan kegiatan seperti _Data Gathering_, _Data Assessing_, dan _Data Cleaning_. Pada proses Data Gathering, data diimpor sedemikian rupa agar bisa dibaca dengan baik menggunakan dataframe Pandas. Untuk proses Data Assessing, berikut adalah beberapa pengecekan yang dilakukan:
-- Duplicate data (data yang serupa dengan data lainnya).
 - Missing value (data atau informasi yang "hilang" atau tidak tersedia)
 - Outlier (data yang menyimpang dari rata-rata sekumpulan data yang ada).
 
 Pada proses _Data Cleaning_ yang dilakukan adalah seperti:
-- Converting Column Type (Mengubah tipe suatu kolom).
+- Encoding dengan One Hot Encodier (Mengubah tipe katergorik menjadi numerik).
 - Train Test Split (membagi data menjadi data latih dan data uji).
 - Normalization (mentransformasi data ke dalam skala yang seragam sehingga semua fitur atau atribut memiliki rentang nilai yang sebanding).
 
-| A_id | Size | Weight | Sweetness | Crunchiness | Juiciness | Ripeness | Acidity | Quality |
-| ------ | ------ |------ | ------ | ------ | ------ |------ | ------ |------ |
-| NaN | NaN | NaN | NaN |NaN | NaN| NaN	| Created_by_Nidula_Elgiriyewithana  | NaN |
-
-
 Tabel 2. Melihat data missing value
 
-Pada proyek kasus ini tidak ditemukannya data duplikat, tetapi ditemukannya _missing value_. Adapaun metode yang digunakan untuk mengatasi hal ini adalah dengan menerapkan _Dropping_ yaitu menghapus data yang _missing_ digunakannya metode ini dikarenakan jumlah missing value hanya berjumlah `1`. Lihat _Tabel 2. Melihat data missing value_. Adapun untuk _outlier_ juga dilakukan dengan metode _dropping_ menggunakan metode IQR.  IQR dihitung dengan mengurangkan kuartil ketiga (Q3) dari kuartil pertama (Q1) sebagaimana rumus berikut.
+Pada proyek kasus ini tidak ditemukannya _missing value_. Adapun untuk _outlier_ juga dilakukan dengan metode _dropping_ menggunakan metode IQR.  IQR dihitung dengan mengurangkan kuartil ketiga (Q3) dari kuartil pertama (Q1) sebagaimana rumus berikut.
 
 $$IQR = Q_3 - Q_1$$
 
 - Q1 adalah kuartil pertama 
 - Q3 adalah kuartil ketiga.
 
-Setelah menggunakan metode IQR untuk menghilangkan _outlier_ pada dataset jumlah dataset menjadi `3790` yang awalnya adalah `4000`.
-Pada proyek ini digunakan _Train Test Split_ pada library  *sklearn.model_selection* untuk membagi dataset menjadi data latih dan data uji dengan pembagian sebesar 20:80 dan random state sebesar 60. Pada proyek kasus ini digunakan _Normalization_ pada library _sklearn.preprocessing.MinMaxScaler_ untuk menormalisasi dataset. Semua proses ini diperlukan dalam rangka membuat model yang baik.
+Setelah menggunakan metode IQR untuk menghilangkan _outlier_ pada dataset jumlah dataset menjadi `297920` yang awalnya adalah `300153`.
+Pada proyek ini digunakan _Train Test Split_ pada library  *sklearn.model_selection* untuk membagi dataset menjadi data latih dan data uji dengan pembagian sebesar 10:90 dan random state sebesar 123. Pada proyek kasus ini digunakan _Normalization_ pada library _sklearn.preprocessing.MinMaxScaler_ untuk menormalisasi dataset. Semua proses ini diperlukan dalam rangka membuat model yang baik.
+
 ## Modeling
-Algoritma pada proyek ini melakukan pemodelan dengan 5 algoritma, yaitu:
+Algoritma pada proyek ini melakukan pemodelan dengan 3 algoritma, yaitu:
 
- _K-Nearest Neighbors (KNN)_ adalah algoritma machine learning yang sederhana dan mudah dipahami untuk klasifikasi dan regresi. Algoritma ini bekerja dengan menemukan k tetangga terdekat dari data baru dan kemudian menggunakan kategori atau nilai rata-rata dari tetangga tersebut untuk memprediksi kategori atau nilai data baru. Adapun parameter yang digunakan pada proyek ini adalah:
--  `n_neighbors` jumlah tetangga terdekat.
-- `weight = distance` Tetangga yang lebih dekat memiliki pengaruh lebih besar.
+ _Linear Regression_ adalah memodelkan hubungan antara satu atau lebih feature dan target variable dengan cara menemukan best-fit line yang meminimalkan selisih antara nilai yang diprediksi dan nilai aktual.
 
-Keunggulan _KNN_ :
-- Dapat digunakan untuk klasifikasi dan regresi.
-- Sederhana dan mudah dipahami.
+Keunggulan _Linear Regression_ :
+- Cepat dan ringan — cocok untuk data kecil/menengah..
+- Mudah diinterpretasi — koefisien menunjukkan pengaruh tiap fitur.
+- Cocok untuk masalah linier sederhana.
+- Tidak mudah overfitting jika asumsi terpenuhi.
 
-Kerugian _KNN_ :
-- Sensitif terhadap outlier. 
-- Membutuhkan banyak memori dan waktu komputasi untuk dataset besar. 
-- Sulit untuk memilih nilai K yang optimal.
+Kerugian _Linear Regression_ :
+- Asumsi linearitas antara fitur dan target harus terpenuhi. 
+- Tidak bisa menangkap interaksi non-linear antar fitur. 
+- Sensitif terhadap multikolinearitas (fitur saling berkorelasi).
+- Performa rendah pada data kompleks.
 
  _Random Forest_ adalah algoritma machine learning ensemble yang menggabungkan beberapa decision tree untuk meningkatkan akurasi prediksi. Algoritma ini bekerja dengan membuat banyak decision tree secara acak dan kemudian menggunakan voting untuk memprediksi kategori atau nilai data baru. Adapun parameter yang digunakan pada proyek ini adalah:
 - `max_depth` kedalaman maksimum.
@@ -177,80 +175,46 @@ Kerugian _Random Forest_ :
 - Membutuhkan banyak waktu komputasi untuk pelatihan. 
 - Sulit untuk diinterpretasikan.
 
- _Support Vector Machine (SVM)_ adalah algoritma machine learning yang digunakan untuk klasifikasi dan regresi. Algoritma ini bekerja dengan mencari hyperplane yang memisahkan data menjadi dua kelas dengan margin terbesar. Parameter yang digunakan pada SVM kali ini adalah parameter bawaan.
+ _XGBoost (Extreme Gradient Boosting)_ adalah algoritma pembelajaran mesin yang dirancang untuk meningkatkan akurasi dan efisiensi prediksi, terutama dalam konteks regresi dan klasifikasi. Algoritma ini menggunakan pendekatan boosting, di mana model dibangun secara bertahap, dengan setiap model baru dilatih untuk memperbaiki kesalahan prediksi dari model sebelumnya. XGBoost mengoptimalkan fungsi kehilangan dengan menggunakan teknik regularisasi dan pembelajaran paralel untuk meningkatkan performa dan kecepatan.
  
- Keuntungan  _Support Vector Machine (SVM)_ :
-- Memiliki akurasi prediksi yang tinggi.
-- Mampu menangani dataset dengan dimensi tinggi.
-- Tidak sensitif terhadap outlier.
-- Dapat digunakan untuk klasifikasi dan regresi.
+ Keuntungan  _XGBoost (Extreme Gradient Boosting)_ :
+- Sangat presisi tinggi — sering menang di kompetisi seperti Kaggle.
+- Mendukung regularisasi → mengurangi overfitting
+- Cepat dan efisien (dibanding model boosting lainnya).
+- Sangat baik untuk data besar & kompleks.
 
-Kerugian  _Support Vector Machine (SVM)_ :
-- Sulit untuk memilih kernel dan parameter lainnya. 
-- Sensitif terhadap outlier. 
-- Membutuhkan banyak waktu komputasi untuk pelatihan.
-
- _Naïve Bayes Classifier_ merupakan sebuah metoda klasifikasi yang berakar pada teorema Bayes. Metode pengklasifikasian dengan menggunakan metode probabilitas dan statistik yang memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya.
- 
- Keuntungan _Naïve Bayes Classifier_:
-- Mudah dipahami dan diimplementasikan.
-- Cepat untuk dilatih dan diprediksi
-
-Kerugian _Naïve Bayes Classifier_:
-- Asumsi independensi fitur mungkin tidak selalu valid.
-- Sensitif terhadap fitur dengan nilai nol. 
-- Kinerja dapat menurun dengan dataset yang kompleks.
-
-_Extra Trees Classifier_ adalah algoritma machine learning yang digunakan untuk klasifikasi data. Ini mirip dengan Random Forest Classifier yang terkenal, tetapi memiliki beberapa perbedaan utama yaitu _Random Splitting_ dan _No Bagging_. 
-
-keuntungan _Extra Trees Classifier_ :
-- Lebih tahan terhadap overfitting dibandingkan dengan Random Forest, terutama pada kumpulan data berdimensi tinggi.
-- Mudah diimplementasikan dan digunakan.
-- Memiliki kinerja yang baik pada berbagai masalah klasifikasi.
-
-Kerugian _Extra Trees Classifier_ :
-- Cenderung kurang akurat dibandingkan Random Forest pada dataset tertentu.
-- Membutuhkan banyak waktu komputasi untuk pelatihan.
-
-Parameter yang digunakan adalah:
-- `n_estimators` Jumlah pohon keputusan yang akan dibuat dalam ensemble.
-- `random_stat`  pengambilan sampel secara acak.
-- `max_depth` Kedalaman maksimum pohon keputusan individual.
-- `n_jobs` mempercepat pelatihan pada sistem dengan beberapa core CPU.
+Kerugian  _XGBoost (Extreme Gradient Boosting)_ :
+- Lebih kompleks — banyak hyperparameter perlu disetel.
+- Training time lebih lama dari Random Forest (terutama untuk tuning).
+- Bisa overfitting jika tidak dituning dengan baik.
 
 ## Evaluation
 
-Dalam tahap evaluasi, metrik yang digunakan adalah `accuracy`
-Accuracy didapatkan dengan menghitung persentase dari jumlah prediksi yang benar dibagi dengan jumlah seluruh prediksi. Rumus:
+Dalam tahap evaluasi, metrik yang digunakan adalah `R2 Score`
+R² Score adalah sebuah metrik yang digunakan untuk mengevaluasi seberapa baik model regresi dapat menjelaskan variasi dari data target (nilai aktual). Nilai R² menunjukkan persentase variasi data yang berhasil dijelaskan oleh model. Rumus:
 
-$$\text{Accuracy} = \frac{\text{TP + TN}}{\text{TN + TP + FN + FP}} \times 100\%$$
+\[
+R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}
+\]
 
-*Penjelasan*
-- TP (True Positive): Jumlah data positif yang diprediksi dengan benar sebagai positif.
-- TN (True Negative): Jumlah data negatif yang diprediksi dengan benar sebagai negatif.
-- FP (False Positive): Jumlah data negatif yang diprediksi secara tidak benar sebagai positif (Kesalahan Tipe I).
-- FN (False Negative): Jumlah data positif yang diprediksi secara tidak benar sebagai negatif (Kesalahan Tipe II).
+Keterangan:
+- \( y_i \): Nilai aktual
+- \( \hat{y}_i \): Nilai prediksi
+- \( \bar{y} \): Rata-rata dari nilai aktual
+- \( n \): Jumlah data.
 
-Rumus ini memecah akurasi menjadi rasio antara data yang diklasifikasikan dengan benar (TP dan TN) dengan jumlah total data. Mengalikan dengan 100% mengubah rasio menjadi persentase.
 
-Berikut hasil accuracy 5 buah model yang latih:
+Berikut hasil \[R^2\] dari 3 buah model yang latih:
 
-| Model | Accuracy |
+| Model | r2-score |
 | ------ | ------ |
-| KNN | 0.90 |
-| RandomForest  | 0.89 |
-| SVM | 0.89 |
-| Naive Bayes | 0.49 |
-| Extra Trees Classifier | 0.90 |
+| Linear Regression | 0.904056 |
+| RandomForest  | 0.971407 |
+| XGBoost | 0.953829 |
 
+Tabel 3. Hasil R2 Score
 
-Tabel 3. Hasil Accuracy
-
-![Plot Accuracy](https://i.ibb.co/wMPKmm4/akhirkata.png)
-
-Gambar 3. Visualisasi Accuracy Model
-
-Dilihat dari _Tabel 3. Hasil Accuracy_ dan _Gambar 3. Visualisasi Accuracy Model_ tersebut dapat diketahui bahwa model dengan algoritma _KNN_ memiliki Accuracy yang lebih tinggi dengan accuracy `90%` . Untuk itu model tersebut yang akan dipilih untuk digunakan. Diharapkan dengan model yang telah dikembangan dapat memprediksi kualitas apel dengan baik menggunakan _K-Nearest Neighbors (KNN)_. Alasan mengapa metode _KNN_ yang dipilih karena _KNN_ adalah algoritma yang sangat sederhana dibandingkan dengan _Extra Trees Classifier_. Hal ini membuatnya lebih mudah untuk dipahami, diimplementasikan, dan diinterpretasikan. _KNN_ juga tidak memiliki banyak parameter yang perlu dioptimalkan, sehingga lebih mudah untuk digunakan.
+Dilihat dari _Tabel 3. Hasil R2 Score_, dapat diketahui bahwa model dengan algoritma _Random Forest_ memiliki R2 Score yang lebih tinggi sebesar `97.14%` . Untuk itu model tersebut yang akan dipilih untuk digunakan. Diharapkan dengan model yang telah dikembangan dapat memprediksi harga tiket pesawat dengan baik menggunakan _Random Forest_.
 
 
 
@@ -259,14 +223,8 @@ Dilihat dari _Tabel 3. Hasil Accuracy_ dan _Gambar 3. Visualisasi Accuracy Model
 
 
 ## Referensi
-1. Sarnita Sadya.(2022). Produksi Apel Indonesia Sebanyak 509.544 Ton pada 2021.
-
-2. Lomo, Christine P., et al. "Daya Terima Panelist terhadap Kualitas Cider Apel dalam Meningkatkan Nilai Gizi Pangan sebagai Imunitas Tubuh di Pandemi Covid-19." Agrista: Jurnal Ilmiah Mahasiswa Agribisnis UNS, vol. 4, no. 1, 2020, pp. 550-556
-3. Afriansyah, M., Saputra, J., Sa’adati, Y., & Valian Yoga Pudya Ardhana. (2023). Optimasi Algoritma Nai?ve Bayes Untuk Klasifikasi Buah Apel Berdasarkan Fitur Warna RGB. Bulletin of Computer Science Research, 3(3), 242-249.
-4. Subramanian, D. (2019). A Simple Introduction to K-Nearest Neighbors Algorithm. Towards Data Science. https://towardsdatascience.com/a-simple-introduction-to-k-nearest-neighbors-algorithm-b3519ed98e
-5. Wood, T. -.What is a Random Forest?. DeepAI. https://deepai.org/machine-learning-glossary-and-terms/random-forest
-6. Gandhi, R. (2018). Support Vector Machine — Introduction to Machine Learning Algorithms: SVM model from scratch. Towards Data Science. https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47
-7. Gandhi, R. (2018). Naive Bayes Classifier. Towards Data Science. https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c
-8. Jason Brownlee. (2021). How to Develop an Extra Trees Ensemble with Python. https://machinelearningmastery.com/extra-trees-ensemble-with-python/
-
+[1]. [https://kumparan.com/jendela-dunia/kenapa-harga-tiket-pesawat-naik-turun-cari-tahu-jawabannya-di-sini-212Dwje2OR3](https://kumparan.com/jendela-dunia/kenapa-harga-tiket-pesawat-naik-turun-cari-tahu-jawabannya-di-sini-212Dwje2OR3).
+[2]. [https://www.nucleusbox.com/assumptions-of-linear-regression/](https://www.nucleusbox.com/assumptions-of-linear-regression/)
+[3]. [https://deepai.org/machine-learning-glossary-and-terms/random-forest](https://deepai.org/machine-learning-glossary-and-terms/random-forest).
+[4]. [https://xgboost.readthedocs.io/en/stable/](https://xgboost.readthedocs.io/en/stable/)
 _
