@@ -171,11 +171,13 @@ Sebelum masuk pengembangan model, karena target variabel yang dianalisis adalah 
 
 Untuk tahap pertama, yaitu pemilihan moodel terbaik dari 3 model yang ada dari hasil training yang didapatkan. Berikut penjelasan masing-masing model:
 - _Linear Regression_ adalah memodelkan hubungan antara satu atau lebih feature dan target variable dengan cara menemukan best-fit line yang meminimalkan selisih antara nilai yang diprediksi dan nilai aktual. Model Linear Regression terdapat pada library from _sklearn.linear_model import LinearRegression_.
+
   Keunggulan _Linear Regression_ :
   - Cepat dan ringan — cocok untuk data kecil/menengah.
   - Mudah diinterpretasi — koefisien menunjukkan pengaruh tiap fitur.
   - Cocok untuk masalah linier sederhana.
   - Tidak mudah overfitting jika asumsi terpenuhi.
+  
   Kerugian _Linear Regression_ :
   - Asumsi linearitas antara fitur dan target harus terpenuhi. 
   - Tidak bisa menangkap interaksi non-linear antar fitur. 
@@ -185,10 +187,12 @@ Untuk tahap pertama, yaitu pemilihan moodel terbaik dari 3 model yang ada dari h
  _Random Forest_ adalah algoritma machine learning ensemble yang menggabungkan beberapa decision tree untuk meningkatkan akurasi prediksi. Algoritma ini bekerja dengan membuat banyak decision tree secara acak dan kemudian menggunakan voting untuk memprediksi kategori atau nilai data baru. Adapun parameter yang sementara diatur pada proyek ini adalah n_estimators dan random_state, sedangkan parameter lainnya yang terdapat pada Random Forest akan mengikuti default dari libray scikit-learn:
 - n_estimators = 50 : Jumlah pohon (trees) dalam hutan. Semakin banyak, semakin stabil, tapi lebih lambat. Default: 100
 - random_state = 123 : Seed untuk pengacakan, agar hasil dapat direproduksi.
+
   Keunggulan _Random Forest_ :
   - Memiliki akurasi prediksi yang tinggi.
   - Mampu menangani dataset dengan dimensi tinggi.
   - Tidak sensitif terhadap outlier.
+  
   Kerugian _Random Forest_ :
   - Cenderung overfit pada dataset kecil. 
   - Membutuhkan banyak waktu komputasi untuk pelatihan. 
@@ -197,11 +201,13 @@ Untuk tahap pertama, yaitu pemilihan moodel terbaik dari 3 model yang ada dari h
  _XGBoost (Extreme Gradient Boosting)_ adalah algoritma pembelajaran mesin yang dirancang untuk meningkatkan akurasi dan efisiensi prediksi, terutama dalam konteks regresi dan klasifikasi. Algoritma ini menggunakan pendekatan boosting, di mana model dibangun secara bertahap, dengan setiap model baru dilatih untuk memperbaiki kesalahan prediksi dari model sebelumnya. XGBoost mengoptimalkan fungsi kehilangan dengan menggunakan teknik regularisasi dan pembelajaran paralel untuk meningkatkan performa dan kecepatan. Beberapa parameter yang diatur secara manual diantaranya sebagai berikut:
 - objective='reg:squarederror' : Fungsi objektif. Untuk regresi biasa menggunakan : "reg:squarederror".
 - random_state = 123 : Untuk reproduksibilitas hasil.  
-   Keuntungan  _XGBoost (Extreme Gradient Boosting)_ :
+
+  Keuntungan  _XGBoost (Extreme Gradient Boosting)_ :
   - Sangat presisi tinggi — sering menang di kompetisi seperti Kaggle.
   - Mendukung regularisasi → mengurangi overfitting
   - Cepat dan efisien (dibanding model boosting lainnya).
   - Sangat baik untuk data besar & kompleks.
+  
   Kerugian  _XGBoost (Extreme Gradient Boosting)_ :
   - Lebih kompleks — banyak hyperparameter perlu disetel.
   - Training time lebih lama dari Random Forest (terutama untuk tuning).
