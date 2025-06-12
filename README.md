@@ -4,7 +4,7 @@ Domain yang dipilih untuk proyek *machine learning* ini adalah **Ekonomi dan Bis
 
 ### 1.1 Latar Belakang
 
-![Ilustrasil](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Ilustrasi.png)
+[Ilustrasil](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Ilustrasi.png)
 
 Industri penerbangan global telah mengalami pertumbuhan yang signifikan, menjadikan perjalanan udara sebagai moda transportasi yang semakin mudah diakses dan penting bagi individu maupun bisnis. Di tengah dinamika pasar yang kompleks, harga tiket pesawat seringkali berfluktuasi secara drastis, dipengaruhi oleh berbagai faktor seperti waktu keberangkatan, rute, maskapai penerbangan, kelas penerbangan, musim, hingga dinamika penawaran dan permintaan. Volatilitas harga ini menjadi tantangan tersendiri bagi konsumen yang ingin merencanakan perjalanan dengan efisien dan hemat biaya. Tanpa informasi yang akurat mengenai estimasi harga yang wajar, penumpang berisiko membayar lebih mahal dari yang seharusnya atau kesulitan dalam mengalokasikan anggaran perjalanan secara optimal [[1](https://kumparan.com/jendela-dunia/kenapa-harga-tiket-pesawat-naik-turun-cari-tahu-jawabannya-di-sini-212Dwje2OR3)].
 Pengembangkan model prediktif harga tiket pesawat ini diharapkan dapat memberikan estimasi harga yang akurat dan relevan bagi travel agent. Dengan memanfaatkan teknik machine learning berbasis regresi pada kumpulan data pemesanan tiket pesawat, model ini diharapkan mampu mengidentifikasi pola dan hubungan antara berbagai fitur perjalanan (maskapai, waktu keberangkatan, jumlah transit, durasi penerbangan, kota asal/tujuan, kelas, dan sisa hari sebelum keberangkatan) dengan harga tiket. Informasi prediksi harga ini akan memberdayakan konsumen untuk mengambil keputusan yang lebih cerdas. Penumpang dapat membandingkan harga yang ditawarkan oleh maskapai atau agen perjalanan dengan harga prediksi model, sehingga memungkinkan mereka untuk mengidentifikasi apakah harga yang ditawarkan lebih mahal atau lebih murah dari ekspektasi.
@@ -83,11 +83,11 @@ Setelah dilakukan pengujian, tidak terdapat missing value pada dataset, tetapi t
 
 ### 3.3 EDA - Univariate Analysis
 
-![univariate analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/Analisis_Univariate_Fitur_Kategorik_ver2.png)
+[univariate analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/Analisis_Univariate_Fitur_Kategorik_ver2.png)
 
 Gambar 3.1 Analisis Univariat (Data Kategori) 
 
-![Univariate Analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Analisis_Univariate_Fitur_Numerik.png)
+[Univariate Analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Analisis_Univariate_Fitur_Numerik.png)
 
 Gambar 3.2 Analisis Univariat (Data Numerik) 
 
@@ -98,17 +98,17 @@ Distribusi variabel harga juga menunjukkan tanda-tanda skewness.
 
 ### 3.4 EDA - Bivariate Analysis
 
-![Bivariate Analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/Analisis_Bivariate_Fitur_Kategorik_ver2.png)
+[Bivariate Analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/Analisis_Bivariate_Fitur_Kategorik_ver2.png)
 
 
 Gambar 3.3 Analisis Biivariat (Kategorikal)
 
-![Bivariate Analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Analisis_Bivariate_Fitur_Numerik.png)
+[Bivariate Analysis](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Analisis_Bivariate_Fitur_Numerik.png)
 
 
 Gambar 3.4 Analisis Bivariate (Numerikal)
 
-![Correlation Matrix](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Correlation_Metrix.png)
+[Correlation Matrix](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/Correlation_Metrix.png)
 
 
 Gambar 3.5 Analisis Matriks Korelasi
@@ -253,7 +253,7 @@ Setelah melakukan hyperparameter tunning dengan RandomnizedSearchCV, didapatkan 
 ## 6. Evaluation
 Dalam tahap evaluasi, metrik yang digunakan untuk melihat performa model seperti pada bagian **Modelling** adalah RMSE untuk Training Set, RMSE untuk Cross Validation, dan $$R^2$$ Score yang menjadi indikator performa model. R² Score adalah sebuah metrik yang digunakan untuk mengevaluasi seberapa baik model regresi dapat menjelaskan variasi dari data target (nilai aktual). Root Mean Square Error (RMSE) adalah metrik evaluasi untuk mengukur seberapa besar rata-rata kesalahan prediksi sebuah model regresi terhadap nilai aktual, dalam satuan yang sama dengan target, sedangkan Nilai R² menunjukkan persentase variasi data yang berhasil dijelaskan oleh model. Rumus:
 
-![formula](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/rmse_formula.png)
+[formula](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/rmse_formula.png)
 
 
 Gambar 6.1 Rumus RMSE
@@ -263,7 +263,7 @@ Keterangan:
 - $$\hat{y}_i$$: Nilai prediksi
 - $$n$$: Jumlah data
 
-![formula](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/r2_score_formula.png)
+[formula](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/ab189082713b5ab9395e128dac2c808692935472/image/r2_score_formula.png)
 
 
 Gambar 6.2 Rumus $$R^2$$ Score
@@ -293,7 +293,7 @@ Selanjutnya, akan diuji hasil prediksi model 'best_regressor' dengan data uji un
 
 Hasil pengujian model dengan data uji ini membuktikan bahwa model dapat memprediksi harga tiket dengan akurasi yang bagus seperti pengujian model dengan data latih. Untuk visualisasi bagaimana harga tiket hasil prediksi model dibandingkan dengan harga tiket yang sebenarnya dapat dilihat pada Gambar 6.2 berikut
 
-![testing](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/Prediction_vs_Actual.png)
+[testing](https://raw.githubusercontent.com/FachryYusrie/Proyek-Machine-Learning-Dicoding-Predictive-Analytics-Prediksi-Harga-Tiket-Pesawat/blob/6f0dc626109148ef907d73e9b200c4644ef77890/image/Prediction_vs_Actual.png)
 
 
 Gambar 6.2 Prediction vs Actual Harga Tiket Pesawat
