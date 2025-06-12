@@ -220,7 +220,7 @@ Untuk tahap pertama, yaitu pemilihan moodel terbaik dari 3 model yang ada dari h
   - Training time lebih lama dari Random Forest (terutama untuk tuning).
   - Bisa overfitting jika tidak dituning dengan baik.
 
-Berikut hasil RMSE Training Set, RMSE Cross Validation, dan $$R^2$$ dari 3 buah model yang latih:
+Berikut hasil RMSE Training Set, RMSE Cross Validation, dan $$R^2$$ dari 3 buah model yang dilatih:
 
 | Model | RMSE Train | RMSE CV | R2 Score |
 | ------ | ------ | ------ | ------ |
