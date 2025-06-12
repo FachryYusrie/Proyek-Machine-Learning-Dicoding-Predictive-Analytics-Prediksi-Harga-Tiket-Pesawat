@@ -46,7 +46,9 @@ Tujuan dari proyek ini adalah:
 | Tags | _Computer Science, Business, Economics, Data Visualization, Regression, Exploratory Data Analysis_ |
 
 Berikut informasi pada dataset: 
-Data yang digunakan dalam pembuatan model merupakan data primer, data ini didapat dari sebuah perusahaan pertanian Amerika, yang disediakan secara publik di kaggle dengan nama datasets yaitu: _Apple Quality_
+Pemilik dataset menggunakan alat scrapping data Octoparse untuk mengekstrak data dari situs web. Data dikumpulkan dalam dua bagian: satu untuk tiket kelas ekonomi dan lainnya untuk tiket kelas bisnis. Total 300.261 opsi pemesanan penerbangan yang unik diekstrak dari situs tersebut. Data dikumpulkan selama 50 hari, dari 11 Februari hingga 31 Maret 2022. Sumber data adalah data sekunder dan dikumpulkan dari situs web [Ease my trip](https://travelpricedrops.com/flights?f=s&b=b&bvert=hotels&pt=2&gad_source=1&gad_campaignid=21091233543&gbraid=0AAAAACxCAA5ptbONmhHoYUXapody2aGGW&gclid=Cj0KCQjw0qTCBhCmARIsAAj8C4ZP5eV4Z22BpUnalgMsg9Mlxosp25MlftSIJZBtAbSo4N1phn6QOkcaArusEALw_wcB).
+
+Translated with DeepL.com (free version)
 
 | Unnamed | airline | flight | source_city | departure_time | stops | arrival_time | destination_city | class | duration | days_left | price |
 | ------ | ------ | ------ |------ | ------ | ------ | ------ |------ | ------ |------ | ------ | ------ |
